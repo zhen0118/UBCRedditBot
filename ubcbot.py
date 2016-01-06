@@ -26,7 +26,7 @@ while True:
 					course_name = title_string
 			#Ensure that the title we checked contains both course_number and course_name
 			if (course_number is not None) and (course_name is not None):
-				 search_results = list(search(course_name + " " + course_number, subreddit="ubc", sort="new", period=None, limit=50))
+				 search_results = list(reddit.search(course_name + " " + course_number, subreddit="ubc", sort="new", period=None, limit=50))
 				 for result in search_results:
 				 # Construct post with list of posts with course_name + course_number
 				 # and post in that submission.
