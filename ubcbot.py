@@ -23,7 +23,7 @@ while True:
 				 if title_string.len() == 3 and title_string.isdigit():
 					course_number = title_string
 				 #Check txt file if course_name is found in list of courses (CPSC, MATH, ENGL)
-				 if check_course(course_name):
+				 if check_course(title_string):
 					course_name = title_string
 			#Ensure that the title we checked contains both course_number and course_name
 			if (course_number is not None) and (course_name is not None):
