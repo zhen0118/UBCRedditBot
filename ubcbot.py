@@ -1,7 +1,6 @@
 import praw
 import time
 import re
-from pastebin import PastebinAPI
 
 user_agent = "UBC Bot 0.1"
 reddit = praw.Reddit(user_agent=user_agent)
