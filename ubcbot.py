@@ -6,7 +6,7 @@ from pastebin import PastebinAPI
 user_agent = "UBC Bot 0.1"
 reddit = praw.Reddit(user_agent=user_agent)
 reddit.login()
-already_done = dict()
+already_done = list()
 
 while True:
 	subreddit = reddit.get_subreddit("ubc")
